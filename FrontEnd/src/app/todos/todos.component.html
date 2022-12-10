@@ -1,0 +1,30 @@
+<h1>MyTodos</h1>
+<div class="alert alert-success" *ngIf="errmssg">{{errmssg}}</div>
+<div class="alert alert-success" *ngIf="delmssg">{{delmssg}}</div>
+<div class="container">
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Description</th>
+            <th>Worker</th>
+            <th>Status</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let todo of todolist">
+            <td>{{todo.id}}</td>
+            <td>{{todo.description}}</td>
+            <td>{{todo.worker}}</td>
+	        <td>{{todo.status}}</td>
+            <td><button (click)="updateTodo(todo.id)" class="btn btn-success">Update</button></td>
+            <td><button (click)="deleteTodo(todo.id)" class="btn btn-warning">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
+<div>
+    <button (click)="addTodo()" class="btn btn-success">Add</button>
+</div>
+</div>

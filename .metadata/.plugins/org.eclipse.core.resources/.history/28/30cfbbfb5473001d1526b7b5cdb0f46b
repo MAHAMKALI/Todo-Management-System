@@ -1,0 +1,4 @@
+INSERT INTO TODO(DESCRIPTION,WORKER,STATUS) VALUES('Design UI for login page','kishore','Done');
+INSERT INTO TODO(DESCRIPTION,WORKER,STATUS) VALUES('Design NAV for Home Page','priya','In Progress');
+INSERT INTO TODO(DESCRIPTION,WORKER,STATUS) VALUES('Design Drop Down for Nav Section','Ramya','In Progress');
+INSERT INTO TODO(DESCRIPTION,WORKER,STATUS) VALUES('Design Menu for images','Rahul','Done');

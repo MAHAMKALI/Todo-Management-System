@@ -1,0 +1,38 @@
+# server properties
+server:
+  port: 8081
+
+# Secret Key To Generate Token
+app:
+  secretKey: '[@q2Xg7@T4mOplFu#Ae]'
+  jwtValidityMinutes: 15
+  
+    
+# Configure Database here
+  datasource:
+    url: jdbc:h2:mem:authentication_db
+    username: sa
+    password: 
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: false
+    
+spring:
+  main:
+    allow-circular-references: true
+
+# Error Messages
+jwtUtil:
+  expiredMessage: Token has been expired
+  malformedMessage: Token is in invalid format
+  signatureMessage: Token signature is invalid
+  nullOrEmptyMessage: Token is either null or empty
+  unsupportedMessage: Claims for token is not supported
+  
+userDetails:
+  errorMessage: Incorrect Username or Password
+  badCredentialsMessage: Incorrect Username or Password
+  disabledAccountMessage: Your account has been disabled

@@ -1,0 +1,5 @@
+package com.todo.backend.repo;
+
+public interface UserRepository {
+
+}

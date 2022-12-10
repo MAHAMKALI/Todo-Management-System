@@ -1,0 +1,5 @@
+package com.todo.backend.exceptions;
+
+public class InvalidCredentialsException {
+
+}
